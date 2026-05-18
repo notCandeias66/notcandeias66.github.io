@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Afonso Candeias — Software Developer & Game Developer</title>
+      <meta name="description" content="MSc Software Developer specialising in Unity game systems and full-stack web development. Based in Lisbon, Portugal. IEEE-published researcher and competitive basketball player." />
+      <meta name="keywords" content="Afonso Candeias, software developer, game developer, Unity, C#, React, Lisbon, Portugal, ISCTE, PLAYVREHAB, IEEE" />
+      <meta name="author" content="Afonso Candeias" />
+      <meta property="og:title" content="Afonso Candeias — Software Developer" />
+      <meta property="og:description" content="MSc Software Developer. Game systems, full-stack web, IEEE-published research." />
+      <meta property="og:type" content="website" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Load the other files -->
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js" defer></script>
+
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- NAV -->
+    <nav>
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">AC<span>.</span></a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Background</a></li>
+        </ul>
+        <a href="#contact" class="nav-cta">Get in touch</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="mobile-close" id="mobileClose">✕</button>
+      <a href="#about" onclick="closeMobile()">About</a>
+      <a href="#skills" onclick="closeMobile()">Skills</a>
+      <a href="#projects" onclick="closeMobile()">Projects</a>
+      <a href="#experience" onclick="closeMobile()">Experience</a>
+      <a href="#contact" onclick="closeMobile()">Contact</a>
+    </div>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-glow"></div>
+      <div class="container">
+        <p class="hero-tag">Available for opportunities</p>
+        <h1 class="hero-name">
+          Afonso
+          <span class="accent-line">Candeias</span>
+        </h1>
+        <p class="hero-tagline">
+          <strong>Software & Game Developer</strong> with an MSc in Telecommunications & Computer Engineering. I build things that matter. From <strong>rehabilitation technology indexed on IEEE</strong> to game systems that challenge and engage players.
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="5 3 19 12 5 21 5 3"/></svg>
+            View my work
+          </a>
+          <a href="#contact" class="btn-ghost">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+            Say hello
+          </a>
+          <a href="https://tinyurl.com/yeyknrs6" target="_blank" rel="noopener" class="btn-ghost">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download CV
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num">MSc</div>
+            <div class="hero-stat-label">Grad, ISCTE-IUL</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">IEEE</div>
+            <div class="hero-stat-label">Published Research</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">16y</div>
+            <div class="hero-stat-label">Basketball Career</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">2×</div>
+            <div class="hero-stat-label">FIBA European Division B Participant</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">About me</p>
+          <h2 class="section-title">Builder at heart.<br>Researcher by training.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a software developer based in <strong>Lisbon, Portugal</strong>, freshly graduated with an MSc from ISCTE-IUL. My work sits at the intersection of game design, systems thinking, and real-world impact as I don't just build things that run, I build things that matter.
+            </p>
+            <p>
+              My thesis project, <strong>PLAYVREHAB</strong>, went from academic challenge to a published paper at ATEE 2025, indexed on IEEE Xplore. Building a serious game clinicians could actually use with real-time body tracking, patient database, web dashboard, has taught me more than any course ever could.
+            </p>
+            <p>
+              <strong>Game development</strong> is where I want to be. The combination of systems design, creative problem-solving, and real-time feedback loops is something I find endlessly compelling. But I'm equally comfortable on the full stack when the problem is worth solving.
+            </p>
+            <p>
+              Outside of code, I've played competitive basketball for <strong>16 years</strong>, including representing Portugal at the FIBA U16 European Championship Division B twice. That background shapes how I work: team-first, disciplined, and comfortable under pressure.
+            </p>
+          </div>
+
+          <div class="about-aside reveal reveal-delay-2">
+            <div class="about-card">
+              <div class="about-card-label">Location</div>
+              <div class="about-card-value">Lisbon, Portugal</div>
+            </div>
+            <div class="about-card">
+              <div class="about-card-label">Open to</div>
+              <div class="about-card-value">Lisbon · Remote · EU</div>
+            </div>
+            <div class="about-card">
+              <div class="about-card-label">Primary focus</div>
+              <div class="about-card-value accent">Game Development</div>
+            </div>
+            <div class="about-card">
+              <div class="about-card-label">Also strong in</div>
+              <div class="about-card-value">Full-Stack Web Development</div>
+            </div>
+            <div class="about-card">
+              <div class="about-card-label">Languages</div>
+              <div class="about-card-value">Portuguese · English (C1) · Spanish (B1)</div>
+            </div>
+            <div class="about-card">
+              <div class="about-card-label">Research</div>
+              <div class="about-card-value accent">IEEE Xplore · ATEE 2025</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Technical skills</p>
+          <h2 class="section-title">The tools I work with.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <div class="skill-group-title">Game Development</div>
+            <div class="skill-tags">
+              <span class="skill-tag primary">Unity</span>
+              <span class="skill-tag primary">C#</span>
+              <span class="skill-tag">Kinect SDK</span>
+              <span class="skill-tag">Serious Games</span>
+              <span class="skill-tag">Procedural Generation</span>
+              <span class="skill-tag">Game Design</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal reveal-delay-1">
+            <div class="skill-group-title">Languages</div>
+            <div class="skill-tags">
+              <span class="skill-tag primary">C#</span>
+              <span class="skill-tag primary">Python</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Kotlin</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">C</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal reveal-delay-2">
+            <div class="skill-group-title">Web & Backend</div>
+            <div class="skill-tags">
+              <span class="skill-tag primary">React</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">HTML/CSS</span>
+              <span class="skill-tag">PHP</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal reveal-delay-3">
+            <div class="skill-group-title">Data & Databases</div>
+            <div class="skill-tags">
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">SQLite</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">OpenCV</span>
+              <span class="skill-tag">TensorFlow</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <div class="skill-group-title">Tools & Workflow</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">Postman</span>
+              <span class="skill-tag">Bash</span>
+              <span class="skill-tag">MATLAB</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal reveal-delay-1">
+            <div class="skill-group-title">Soft Skills</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Team Leadership</span>
+              <span class="skill-tag">Competitive Discipline</span>
+              <span class="skill-tag">Research Writing</span>
+              <span class="skill-tag">Problem Solving</span>
+              <span class="skill-tag">Adaptability</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Projects</p>
+          <h2 class="section-title">What I've built.</h2>
+        </div>
+
+        <!-- PROJECT TABS -->
+        <div class="project-tabs reveal">
+          <button class="project-tab active" data-tab="featured">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            Featured
+          </button>
+          <button class="project-tab" data-tab="university">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            University
+          </button>
+          <button class="project-tab" data-tab="side">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            Side Projects
+          </button>
+        </div>
+
+        <!-- TAB: FEATURED -->
+        <div class="tab-panel active" id="tab-featured">
+          <div class="featured-project">
+            <div class="featured-header">
+              <div>
+                <span class="featured-badge">⭐ Featured Project</span>
+                <h3 class="featured-title">PLAYVREHAB</h3>
+                <p class="featured-subtitle">Kinect-based Serious Game for Physical Rehabilitation</p>
+              </div>
+              <a href="https://ieeexplore.ieee.org" target="_blank" rel="noopener" class="ieee-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                Published · IEEE Xplore · ATEE 2025
+              </a>
+            </div>
+
+            <div class="featured-body">
+              <div>
+                <p class="fp-section-label">The Problem</p>
+                <p class="fp-section-text">
+                  Physical rehab exercises are <strong>repetitive, dull, and hard to monitor</strong> without constant clinical presence. Patient engagement drops, and clinicians lose visibility into session data, leading to poor adherence and incomplete recovery records.
+                </p>
+
+                <p class="fp-section-label">The Solution</p>
+                <p class="fp-section-text">
+                  PLAYVREHAB is a <strong>Unity-based serious game</strong> that turns rehabilitation exercises into interactive gameplay using a Kinect sensor for real-time skeletal tracking. A separate <strong>clinician web dashboard</strong> (PHP/MySQL) lets therapists monitor sessions and manage patient profiles with no room presence required.
+                </p>
+
+                <p class="fp-section-label">Tech Stack</p>
+                <div class="featured-stack">
+                  <span class="stack-chip">Unity · C#</span>
+                  <span class="stack-chip">Kinect SDK</span>
+                  <span class="stack-chip">MySQL</span>
+                  <span class="stack-chip">PHP</span>
+                  <span class="stack-chip">HTML/CSS</span>
+                </div>
+
+                <p class="fp-section-label">Architecture</p>
+                <p class="fp-section-text">
+                  The Unity client handles real-time Kinect skeletal tracking and game logic. Session data such as reps, errors, exercises completed is written to a <strong>MySQL backend via PHP REST endpoints</strong>. The clinician dashboard, a standalone PHP/HTML interface, reads and presents this data in a clean session-review format.
+                </p>
+              </div>
+
+              <div>
+                <p class="fp-section-label">Key Highlights</p>
+                <ul class="highlight-list">
+                  <li>Real-time body tracking via Microsoft Kinect SDK — no controllers, no barriers to entry for patients</li>
+                  <li>Progressive difficulty system and feedback loops designed with serious game principles to maintain engagement</li>
+                  <li>Full patient database with CRUD operations for clinician management</li>
+                  <li>Session monitoring dashboard accessible remotely — not just a game, a clinical tool</li>
+                  <li>Research paper published and indexed at IEEE Xplore following ATEE 2025 conference</li>
+                </ul>
+
+                <br/>
+
+                <div>
+                  <p class="fp-section-label">What I learned</p>
+                  <p class="fp-section-text">
+                    PLAYVREHAB forced me to bridge <strong>game feel and clinical utility</strong>, two things that rarely want the same thing. I learned to design for users who aren't players, build a multi-component system where game and dashboard stay in sync, and write research that holds up to academic peer review.
+                  </p>
+                </div>
+              </div>
+              
+              <div>
+                <p class="fp-section-label">Demo</p>
+                <div class="uni-video-wrapper">
+                    <iframe
+                      src="https://www.youtube.com/embed/sneQVSLS9bc?rel=0&modestbranding=1"
+                      title="Turn-Based Strategy Game — Environment Creation"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                      loading="lazy"
+                    ></iframe>
+                  </div>
+                <p class="fp-section-text" style="display: flex; align-items: center; justify-content: center;">Unity Level</p>
+              </div>
+
+            </div>
+
+            <div class="featured-footer">
+              <div class="fp-links">
+                <a href="https://github.com/notCandeias66/PlayVRehab" target="_blank" rel="noopener" class="btn-ghost" style="font-size:0.78rem; padding: 0.5rem 1rem;">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  GitHub
+                </a>
+              </div>
+              <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted);">
+                MSc Thesis Project · ISCTE-IUL · 2023–2025
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB: UNIVERSITY -->
+        <div class="tab-panel" id="tab-university">
+
+          <!-- Turn-Based Strategy Game -->
+          <div class="featured-project uni-project">
+            <div class="featured-header">
+              <div>
+                <span class="featured-badge" style="background: rgba(139,92,246,0.12); border-color: rgba(139,92,246,0.3); color: #a78bfa;">🎓 MSc Coursework · ISCTE-IUL</span>
+                <h3 class="featured-title">Turn-Based Strategy Game</h3>
+                <p class="featured-subtitle">Programming and Generation of Virtual Worlds — Unity 3D</p>
+              </div>
+            </div>
+ 
+            <div class="featured-body" style="grid-template-columns: 1fr 1fr;">
+              <div>
+                <p class="fp-section-label">Overview</p>
+                <p class="fp-section-text">
+                  A <strong>fully playable turn-based strategy game</strong> built from scratch in Unity for the Programming and Generation of Virtual Worlds course at ISCTE-IUL. Designed and developed collaboratively with Rui Jesus, covering everything from procedural world generation to turn management systems, AI opponents, and custom Unity shaders.
+                </p>
+ 
+                <p class="fp-section-label">What we built</p>
+                <ul class="highlight-list">
+                  <li>Procedural environment generation with custom terrain and asset placement pipelines</li>
+                  <li>Turn-based game loop with state management, action queuing, and win condition logic</li>
+                  <li>Custom ShaderLab / HLSL shaders for visual environment effects</li>
+                  <li>Unit movement, combat resolution, and strategic AI behaviour systems</li>
+                  <li>Full playable build with game flow from start to end state</li>
+                </ul>
+ 
+                <br/>
+ 
+                <p class="fp-section-label">Tech Stack</p>
+                <div class="featured-stack">
+                  <span class="stack-chip">Unity · C#</span>
+                  <span class="stack-chip">ShaderLab</span>
+                  <span class="stack-chip">HLSL</span>
+                  <span class="stack-chip">Procedural Gen</span>
+                </div>
+              </div>
+ 
+              <div>
+                <p class="fp-section-label">What I learned</p>
+                <p class="fp-section-text">
+                  This project deepened my understanding of <strong>game architecture at a systems level</strong>, how to structure a turn-based loop cleanly, how procedural generation decisions ripple through the rest of your design, and how Unity's rendering pipeline works under the hood via custom shaders. Collaborating with a co-author also sharpened how I split and own different subsystems within a shared codebase.
+                </p>
+ 
+                <p class="fp-section-label">Collaborators</p>
+                <p class="fp-section-text">Built with <strong>Rui Jesus</strong> as part of the MSc programme at ISCTE-IUL.</p>
+
+                <p class="fp-section-label">Project Videos</p>
+                <div class="uni-video-block" style="margin-bottom: 1.25rem;">
+                  <div class="uni-video-label">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    Gameplay Simulation · 3m 50s
+                  </div>
+                  <div class="uni-video-wrapper">
+                    <iframe
+                      src="https://www.youtube.com/embed/CWDJFLoj7kQ?rel=0&modestbranding=1"
+                      title="Turn-Based Strategy Game — Gameplay Simulation"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                      loading="lazy"
+                    ></iframe>
+                  </div>
+                </div>
+
+                <div class="uni-video-block">
+                  <div class="uni-video-label">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Environment Creation · 5m 20s
+                  </div>
+                  <div class="uni-video-wrapper">
+                    <iframe
+                      src="https://www.youtube.com/embed/_iUXtjNqz6k?rel=0&modestbranding=1"
+                      title="Turn-Based Strategy Game — Environment Creation"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                      loading="lazy"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="featured-footer">
+              <div class="fp-links">
+                <a href="https://github.com/notCandeias66/TurnBasedStrategyGame" target="_blank" rel="noopener" class="btn-ghost" style="font-size:0.78rem; padding: 0.5rem 1rem;">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  GitHub
+                </a>
+                <a href="https://www.youtube.com/watch?v=W3ukuJsYKpY" target="_blank" rel="noopener" class="btn-ghost" style="font-size:0.78rem; padding: 0.5rem 1rem; color: #f87171; border-color: rgba(248,113,113,0.25);">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  Full Presentation · 1h 49min
+                </a>
+              </div>
+              <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted);">
+                MSc Coursework · Programming & Generation of Virtual Worlds · ISCTE-IUL
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- TAB: SIDE PROJECTS -->
+        <div class="tab-panel" id="tab-side">
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-card-header">
+                <div class="project-card-icon">🎮</div>
+                <div class="project-card-links">
+                  <a href="https://github.com/notCandeias66/WarframeSyndicateModSeller" target="_blank" rel="noopener" class="icon-link" title="View on GitHub">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <h4 class="project-card-title">Warframe Syndicate Mod Seller</h4>
+              <p class="project-card-desc">
+                A <strong>Python automation</strong> tool that manages sell orders on <strong>Warframe Market</strong>. Fetches live prices via the unofficial API, sets competitive listings automatically (lowest price + 1p), and creates, updates, or removes orders based on configurable minimums. Built with clean OOP architecture, a dedicated HTTP client class and a separate business-logic manager.
+              </p>
+              <div class="featured-stack">
+                <span class="stack-chip">Python</span>
+                <span class="stack-chip">REST API</span>
+                <span class="stack-chip">JWT Auth</span>
+                <span class="stack-chip">OOP</span>
+                <span class="stack-chip">Automation</span>
+                <span class="stack-chip">CLI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Background</p>
+          <h2 class="section-title">Where I've been.</h2>
+        </div>
+
+        <div class="exp-edu-grid">
+          <!-- EDUCATION -->
+          <div class="reveal">
+            <h3 style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 2rem;">Education</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-period">2023 – 2025</div>
+                <div class="timeline-title">MSc · Telecommunications & Computer Engineering</div>
+                <div class="timeline-org">ISCTE-IUL, Lisbon</div>
+                <div class="timeline-desc">Thesis: PLAYVREHAB — Kinect serious game for physical rehabilitation. Published at ATEE 2025 and indexed on IEEE Xplore.</div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-period">2020 – 2023</div>
+                <div class="timeline-title">BSc · Telecommunications & Computer Engineering</div>
+                <div class="timeline-org">ISCTE-IUL, Lisbon</div>
+                <div class="timeline-desc">Built core foundations in algorithms, databases, OOP, and systems engineering. Developed multiple coursework projects spanning Java, PHP, MySQL, and C.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- EXTRACURRICULAR / BASKETBALL -->
+          <div class="reveal reveal-delay-1">
+            <h3 style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 2rem;">Beyond the screen</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot active"></div>
+                <div class="timeline-period">2010 – Present</div>
+                <div class="timeline-title">Basketball Player</div>
+                <div class="timeline-org">National League · Portugal</div>
+                <div class="timeline-desc">
+                  Competed at senior national league level across multiple clubs over 16 years. Represented the <strong style="color: var(--text-primary)">Portugal U16 National Team</strong> at the FIBA U16 European Championship Division B in consecutive seasons (2016/17, 2017/18). The same discipline, adaptability, and team-first mentality carries directly into how I work.
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-top: 2.5rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem;">
+              <p style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem;">Languages</p>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                <span class="stack-chip">Portuguese (Native)</span>
+                <span class="stack-chip">English (C1)</span>
+                <span class="stack-chip">Spanish (B1)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Get in touch</p>
+          <h2 class="section-title">Let's build something.</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-inner">
+            <p class="reveal" style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 0.5rem;">
+              Open to full-time roles, freelance projects, and interesting conversations. Whether you're a studio, a startup, or someone with a problem worth solving. I'd love to hear from you.
+            </p>
+
+            <div class="contact-links">
+              <a href="mailto:candeiasafonso@gmail.com" target="_blank" rel="noopener" class="contact-link reveal">
+                <div class="contact-link-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+                </div>
+                <div>
+                  <div class="contact-link-label">Email</div>
+                  <div class="contact-link-value">candeiasafonso@gmail.com</div>
+                </div>
+                <div class="contact-link-arrow">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </div>
+              </a>
+
+              <a href="https://linkedin.com/in/afonso-ef-candeias" target="_blank" rel="noopener" class="contact-link reveal reveal-delay-1">
+                <div class="contact-link-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </div>
+                <div>
+                  <div class="contact-link-label">LinkedIn</div>
+                  <div class="contact-link-value">afonso-ef-candeias</div>
+                </div>
+                <div class="contact-link-arrow">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </div>
+              </a>
+
+              <a href="https://github.com/notCandeias66" target="_blank" rel="noopener" class="contact-link reveal reveal-delay-2">
+                <div class="contact-link-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </div>
+                <div>
+                  <div class="contact-link-label">GitHub</div>
+                  <div class="contact-link-value">notCandeias66</div>
+                </div>
+                <div class="contact-link-arrow">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-aside reveal reveal-delay-1">
+            <h3 class="contact-aside-title">What I'm looking for</h3>
+            <p class="contact-aside-text">
+              Primarily interested in <strong style="color: var(--text-primary);">game development roles</strong>, such as studios, indie teams, or companies building interactive experiences. Also open to full-stack web roles where the product is worth caring about.
+            </p>
+            <p class="contact-aside-text">
+              Happy to work on-site in <strong style="color: var(--text-primary);">Lisbon</strong>, fully remote, or anywhere in the <strong style="color: var(--text-primary);">EU</strong>. Response time is usually within 24 hours.
+            </p>
+            <a href="https://tinyurl.com/yeyknrs6" target="_blank" rel="noopener" class="btn-ghost" style="display: inline-flex; margin-top: 0.5rem;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-inner" style="display: flex; align-items: center; justify-content: center;">
+          <p class="footer-copy">© 2026 Afonso Candeias. Built with care.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
